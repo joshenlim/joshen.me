@@ -1,1 +1,4 @@
 config.codekit3
+page-template
+*.scss
+script.js

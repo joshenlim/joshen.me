@@ -10,11 +10,17 @@ body {
   position: relative;
   height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   padding: 0px 200px; }
   @media screen and (max-width: 425px) {
     .main {
       padding: 0px;
       width: 100vw; } }
+  .main .biography,
+  .main .graph {
+    width: 40%; }
+  .main .biography h1 {
+    font-size: 2.1em; }
+  .main .biography p {
+    font-size: 1.5em; }

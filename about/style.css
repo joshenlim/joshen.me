@@ -17,10 +17,94 @@ body {
     .main {
       padding: 0px;
       width: 100vw; } }
-  .main .biography,
-  .main .graph {
+  .main .biography {
     width: 40%; }
   .main .biography h1 {
     font-size: 2.1em; }
   .main .biography p {
     font-size: 1.5em; }
+
+.icons {
+  width: 99%;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between; }
+  .icons img {
+    cursor: pointer; }
+
+.desc {
+  position: absolute;
+  height: 445px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  left: 160px;
+  top: 20px;
+  transform: rotate(-90deg); }
+  .desc .react-desc,
+  .desc .node-desc,
+  .desc .sketch-desc,
+  .desc .htmljscss-desc,
+  .desc .mysql-desc,
+  .desc .git-desc,
+  .desc .coffee-desc {
+    text-shadow: 0px 0px 10px #FFFFFF;
+    transition: all 0.1s ease;
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    right: 10px; }
+
+.graph {
+  position: relative; }
+  .graph .react {
+    cursor: pointer;
+    transition: height 0.2s ease;
+    transition-delay: 0.1s;
+    height: 0px; }
+  .graph .nodejs {
+    transition: height 0.2s ease;
+    transition-delay: 0.2s;
+    height: 0px; }
+  .graph .sketch {
+    transition: height 0.2s ease;
+    transition-delay: 0.3s;
+    height: 0px; }
+  .graph .htmljscss {
+    transition: height 0.2s ease;
+    transition-delay: 0.4s;
+    height: 0px; }
+  .graph .mysql {
+    transition: height 0.2s ease;
+    transition-delay: 0.5s;
+    height: 0px; }
+  .graph .git {
+    transition: height 0.2s ease;
+    transition-delay: 0.6s;
+    height: 0px; }
+  .graph .coffee {
+    transition: height 0.2s ease;
+    transition-delay: 0.7s;
+    height: 0px; }
+
+.showGraph .react {
+  height: 232px; }
+
+.showGraph .nodejs {
+  height: 220px; }
+
+.showGraph .sketch {
+  height: 228px; }
+
+.showGraph .htmljscss {
+  height: 254px; }
+
+.showGraph .git {
+  height: 200px; }
+
+.showGraph .coffee {
+  height: 320px; }
+
+.showGraph .mysql {
+  height: 160px; }

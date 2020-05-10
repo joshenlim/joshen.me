@@ -1,0 +1,22 @@
+@import "~@angular/material/theming";
+@import "src/theme.scss";
+
+.header {
+  .spacer {
+    flex: 1 1 auto;
+  }
+  .nav-icon {
+    margin: 0px 10px;
+    cursor: pointer;
+    &:last-of-type{
+      margin-right: 0px;
+    }
+  }
+  .logo {
+    width: 30px;
+    cursor: pointer;
+  }
+  .app-title {
+    font-size: 0.9em;
+  }
+}

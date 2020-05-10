@@ -1,0 +1,11 @@
+<div class="shadow-md h-48 mx-4 my-4 rounded
+            bg-tertiary bg-center bg-no-repeat bg-cover
+            flex items-end cursor-pointer
+            transition duration-200 ease transform hover:-translate-y-1"
+    [ngStyle]="{'background-image': 'url(' + project.imgUrl + ')'}"
+    (click)="openDialog(project)">
+  <div class="p-4 pt-8 w-full dark-overlay rounded rounded-t-none">
+    <p class="text-white font-header">{{ project.company }}</p>
+    <p class="text-gray-500 font-light">{{ project.industry }}</p>
+  </div>
+</div>

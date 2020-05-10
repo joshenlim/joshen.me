@@ -1,0 +1,30 @@
+<div class="banner container bg-secondary mx-auto sm:px-5 xl:px-32 flex flex-col md:flex-row justify-center items-center">
+  <div class="flex flex-col justify-center items-center md:items-start md:h-full md:flex-1">
+    <h1 class="text-4xl lg:text-6xl text-white relative typed" @shiftHeader></h1>
+    <p class="text-white text-justify relative mt-1" @enterLeave>
+      I'm a full stack developer based in Singapore who also likes dabbling with design.
+      Currently a senior at Nanyang Technological University (NTU) studying Computer Science, graduating in May 2021.
+      Feel free to reach out to me! 
+    </p>
+    <div class="flex items-center mt-6" @enterLeave>
+      <div class="mr-3" *ngFor="let social of socialMedia">
+        <a mat-fab color="primary" [href]="social.url" target="_blank">
+          <img [src]="social.icon"/>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-end items-center mt-5 md:h-full md:flex-1 md:mt-0">
+    <button mat-stroked-button color="accent" routerLink="/works" routerLinkActive="active">
+      Have a gander at my works
+      <mat-icon
+        class="nav-icon"
+        aria-hidden="false"
+        aria-label="View Inbox"
+        routerLink="/inbox"
+        routerLinkActive="active">
+        arrow_forward
+      </mat-icon>
+    </button>
+  </div>
+</div>

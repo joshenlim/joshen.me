@@ -1,0 +1,32 @@
+<div class="flex flex-col md:flex-row justify-center items-center">
+  <div class="flex-1 p-5">
+    <img class="w-full" [src]="project.imgUrl" />
+  </div>
+  <div class="flex-1 p-5">
+    <div class="flex w-full items-center">
+      <p class="text-white font-header text-2xl mr-3">{{ project.company }}</p>
+      <a *ngIf="project.url != null" class="flex items-center" [href]="project.url" target="_blank">
+        <mat-icon
+          class="nav-icon text-white"
+          aria-hidden="false"
+          aria-label="URL">
+          link
+        </mat-icon>
+      </a>
+    </div>
+    <div *ngIf="project.industry" class="text-gray-500 text-sm md:text-base font-light flex items-center">
+      <div class="w-20 md:w-24">Industry: </div>
+      <p>{{ project.industry }}</p>
+    </div>
+    <div *ngIf="project.role" class="text-gray-500 text-sm md:text-base font-light flex items-center">
+      <div class="w-20 md:w-24">Role: </div>
+      <p>{{ project.role }}</p>
+    </div>
+    <div *ngIf="project.workType" class="text-gray-500 text-sm md:text-base font-light flex items-center">
+      <div class="w-20 md:w-24">Work Type: </div>
+      <p>{{ project.workType }}</p>
+    </div>
+    <p class="text-white text-sm md:text-base my-4">{{ project.desc }}</p>
+    <p class="text-white text-sm md:text-base ">{{ project.workSummary }}</p>
+  </div>
+</div>

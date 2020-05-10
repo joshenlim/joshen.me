@@ -1,0 +1,6 @@
+.project-card {
+  flex: 0 0 33.333333%;
+  @media screen and (max-width: 425px) {
+    flex: 0 0 100%;
+  }
+}

@@ -1,0 +1,29 @@
+@tailwind base;
+
+html, body {
+  background-color: #333333;
+}
+
+h1 {
+  font-family: 'Manrope';
+  font-weight: 600;
+}
+
+h3 {
+  font-family: 'Manrope';
+  font-weight: 600;
+}
+
+@tailwind utilities;
+
+.banner {
+  height: calc(100vh - 104px);
+}
+
+*:focus {
+  outline: none !important;
+}
+
+.mat-dialog-container {
+  @apply bg-tertiary 
+}

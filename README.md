@@ -6,4 +6,4 @@ Source files for http://joshen.me. This project was generated with [Angular CLI]
 
 * `npm install`
 * `ng serve`
-* To build static files: `ng build`
+* To build static files: `ng build --prod`

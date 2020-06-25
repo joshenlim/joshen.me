@@ -31,6 +31,10 @@ export class InboxComponent implements OnInit {
 
   socialMedia = [
     {
+      'icon': 'assets/github.svg',
+      'url': 'https://github.com/joshenlim/'
+    },
+    {
       'icon': 'assets/linkedin.svg',
       'url': 'https://www.linkedin.com/in/joshen-lim/'
     },

@@ -1,4 +1,7 @@
 module.exports = {
+  purge: [
+    './src/**/*.ts'
+  ],
   theme: {
     backgroundColor: theme => ({
       'primary': '#212121',

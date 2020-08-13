@@ -16,6 +16,7 @@ export class ProjectDialogComponent {
       url: String,
       industry: String,
       imgUrl: String,
+      duration: String,
       role: String,
       workType: String,
       workSummary: String,

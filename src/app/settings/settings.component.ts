@@ -15,15 +15,17 @@ export class SettingsComponent implements OnInit {
   careers = [
     {
       company: 'ServisHero',
+      duration: 'May 2016 - Jul 2017',
       industry: 'Booking Platform (Services)',
       role: 'Intern / Junior Developer',
       url: 'https://servishero.com/',
       imgUrl: 'assets/servishero.png',
       desc: 'ServisHero provides the best way to hire local service professionals for both home and office, and is regarded as Southeast Asia’s leading mobile app for booking local service professionals.',
-      workSummary: 'I initially worked with their mobile app development team, developing their then hybrid application using Ionic. Thereafter, I joined their web development team primarily on the front-end, using technologies like React, Redux.',
+      workSummary: 'I initially worked with their mobile app development team, developing their then hybrid application using Ionic. Thereafter, I joined their web development team primarily on the front-end, mainly using React and Redux.',
     },
     {
       company: 'Pencil',
+      duration: 'May - Aug, 2018, 2019, 2020',
       industry: 'Creative AI (Advertisting)',
       role: 'Development Intern',
       url: 'https://trypencil.com/',
@@ -33,11 +35,12 @@ export class SettingsComponent implements OnInit {
     },
     {
       company: 'Supabase',
+      duration: 'May 2020 - Present',
       industry: 'Realtime Database',
       role: 'Contributor',
       url: 'http://supabase.io/',
       imgUrl: 'assets/supabase.png',
-      desc: 'Supabase adds realtime and restful APIs to Postgres without a single line of code.',
+      desc: 'Supabase adds realtime and restful APIs to Postgres without a single line of code, and is the open source alternative to Firebase',
       workSummary: 'I joined the team in May 2020 as the company was first inducted into Y-Combinator (S20), mainly developing the platform\'s table editor interface for users to interact with their database with.',
     },
   ]
@@ -101,6 +104,12 @@ export class SettingsComponent implements OnInit {
 
   projects = [
     {
+      company: 'Live Text Recognition',
+      url: 'https://github.com/joshenlim/live-text-recognition',
+      imgUrl: 'assets/textrec.png',
+      desc: 'My final year project (AY18/19 S2 ~ AY19/20 S1) as part of my undergraduate bachelors requirements at NTU where I had the opportunity to explore deep neural network solutions to scene text recognition and built my own text recognition model. I also extended the project by creating a simple web and mobile application to utilize the trained model, by serving the text recognition service over an API server.',
+    },
+    {
       company: 'Parallax',
       url: 'https://parallax.joshen.me',
       imgUrl: 'assets/parallax.png',
@@ -110,7 +119,7 @@ export class SettingsComponent implements OnInit {
       company: 'Galax-C',
       url: 'https://space.joshen.me/',
       imgUrl: 'assets/space.png',
-      desc: 'The first of a series of projects which I had in mind to design sites for unrealistic/futuristic/random products, to challenge and practice my designing. I built this site with the context that we were in a time when space travel was normalized.',
+      desc: 'A random project which I had in mind to design sites for unrealistic/futuristic/random products, to challenge and practice my designing. I built this site with the context that we were in a time when space travel was normalized.',
     },
   ]
 

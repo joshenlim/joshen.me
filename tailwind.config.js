@@ -1,6 +1,6 @@
 module.exports = {
   purge: [
-    './src/**/*.ts'
+    './src/**/*.html'
   ],
   theme: {
     backgroundColor: theme => ({
